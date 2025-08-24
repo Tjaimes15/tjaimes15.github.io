@@ -13,6 +13,7 @@
 body {
   font-family: 'Space Grotesk';
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* Style the header */
@@ -84,23 +85,72 @@ a:hover {
   padding: 20px;
 }
 
-#toc_container {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
-    padding: 20px;
-    width: auto;
+/*Table of contents*/
+.table-of-contents{
+    margin-bottom: 40px;
 }
 
-.toc_title {
-    font-weight: 700;
-    text-align: center;
+.table-of-contents .toc-heading{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
 }
 
-#toc_container li, #toc_container ul, #toc_container ul li{
-    list-style: outside none none !important;
+.table-of-contents a{
+    text-decoration: none;
+    color:aqua; 
+}
+
+.table-of-contents ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.table-of-contents .heading{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.table-of-contents .heading::before{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #219ebc;
+    left: -20px;
+    top: 50%;
+    transform: -50%;
+}
+
+.table-of-contents .sub-heading{
+    font-size: 16px;
+    padding-left: 4px;
+    position: relative;
+}
+
+.table-of-contents .sub-heading::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 8px;
+    border-radius: 50%;
+    background: #219ebc;
+    left: -17px;
+    top: 50%;
+    transform: -50%;
+}
+
+.table-of-contents ul li{
+    margin: 16px 0;
+}
+
+.table-of-contents .headings-container{
+    padding-left: 16px;
+    border-left: 1px solid blue;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -136,24 +186,75 @@ a:hover {
   <a href="#" class="right">Contact</a>
 </div>
 
-<div id="toc_container">
-<p class="toc_title">Contents</p>
-<ul class="toc_list">
-  <li><a href="#First_Point_Header">1 First Point Header</a>
-  <ul>
-    <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
-    <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
-  </ul>
-</li>
-<li><a href="#Second_Point_Header">2 Second Point Header</a></li>
-<li><a href="#Third_Point_Header">3 Third Point Header</a></li>
-</ul>
+<div class="table-of-contents">
+    <h2 class="toc-heading">Table of Contents</h2>
+    <div class="headings-container">
+        <ul>
+            <li>
+                <a href="#tatiana" class="heading">Introduction</a>
+
+                <ul>
+                    <li>
+                        <a href="#lps" class="sub-heading">LPS Volunteering</a>
+                    </li>
+
+                     <li>
+                        <a href="#SWE" class="sub-heading">SWE</a>
+                    </li>
+
+                     <li>
+                        <a href="#SHPE" class="sub-heading">SHPE</a>
+                    </li>
+
+                     <li>
+                        <a href="#LACCEI" class="sub-heading">LACCEI</a>
+                    </li>
+
+                     <li>
+                        <a href="#bof" class="sub-heading">Brooke Owens Fellowship</a>
+                    </li>
+
+                     <li>
+                        <a href="#aviation" class="sub-heading">20 Twenties</a>
+                    </li>
+
+                     <li>
+                        <a href="#aiaa" class="sub-heading">ASCEND</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
 
-<h2 id="First_Point_Header">First Point Header</h2>
+<div class="page-content">
+    <h2 id="tatiana">A little bit about me!</h2>
+    <p>Born and raised in NYC. Moved to Bucaramanga, Colombia for my middle and high school years. 
+        Graduated from high school with an emphasis in science and mathematics, and determined to 
+        use engineering as a means to be the change I wanted to see in my community. Moved back to
+        NYC to pursue my undergraduate career. Majored in Mechatronic Engineering after...
+    </p>
 
+    <h3 id="lps">Pen-pal for Letters to a Pre-Scientist (LPS)</h3>
+    <p>During school year 2023-2025. Currently not taking part, but intended to restart next year.</p>
 
-<div class="intro">
+    <h3 id="SWE">Society of Women Engineers member</h3>
+    <p>Fall '19 - Present</p>
+
+    <h3 id="SHPE">Society of Hispanic Professional Engineers member</h3>
+    <p>Fall '19 - Present</p>
+
+    <h3 id="LACCEI">Latin American and Caribbean Consortium of Engineering Institutions (LACCEI) participant </h3>
+    <p>Fall '19 - Present</p>
+
+    <h3 id="bof">Brooke Owens Fellowship Finalist, Class of 2023</h3>
+    <p>Fall '19 - Present</p>
+
+    <h3 id="aviation">Aviation Week's 20 Twenties, Class of 2022</h3>
+    <p>Fall '19 - Present</p>
+
+    <h3 id="aiaa">AIAA ASCEND Diversity Scholar, Class of 2022</h3>
+    <p>Fall '19 - Present</p>
 
 </div>
 
