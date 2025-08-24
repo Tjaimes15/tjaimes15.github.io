@@ -10,11 +10,10 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Space Grotesk';
   margin: 0;
-  scroll-behavior: smooth;
-  line-height: 1.8;
 }
 
 /* Style the header */
@@ -26,6 +25,7 @@ body {
   background-size: 100vw 100vh;
 }
 
+/* Increase the font size of the h1 element */
 .header h1 {
   font-size: 40px;
   color: white;
@@ -33,6 +33,9 @@ body {
 
 .paragraph-one {
     color: white;
+}
+.paragraph-two {
+    color: black;
 }
 
 /* Style the top navigation bar */
@@ -79,6 +82,20 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
 /* Main column */
 .main {   
   flex: 70%;
@@ -109,7 +126,6 @@ a:hover {
 }
 
 .table-of-contents .heading{
-    padding: 20px;
     font-size: 18px;
     font-weight: bold;
     color: black;
