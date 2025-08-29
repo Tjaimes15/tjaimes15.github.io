@@ -230,8 +230,11 @@ input[type=submit]:hover {
     <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="5f0896e3-d19e-47b5-bd05-f2da93b33aad">
 
+      <input type="hidden" name="subject" value="New contact submission">
+      <input type="hidden" name="form_name" value="ADWC">
+
       <label for="name"><b>Name</b></label>
-      <input type="text" id="name" name="name" placeholder="Your name" required>
+      <input type="hidden" id="name" name="name" placeholder="Your name" required>
 
       <label for="email"><b>Email</b></label>
       <input type="text" id="email" name="email" placeholder="Your email address" required>
@@ -241,17 +244,6 @@ input[type=submit]:hover {
 
       <input type="submit" value="Submit">
     </form>
-
-    <form action="https://api.web3forms.com/submit" method="POST">
-
-    <input type="hidden" name="access_key" value="5f0896e3-d19e-47b5-bd05-f2da93b33aad">
-
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-    <button type="submit">Submit Form</button>
-
-</form>
   </div>
 </div>
 
