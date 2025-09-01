@@ -192,6 +192,22 @@ a:hover {
   width: 100%; /* Sets the width of the line */
 }
 
+figure {
+  border: thin silver solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+figcaption {
+  color: black;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -384,7 +400,7 @@ a:hover {
         </div>
 
         <figure>
-          <img style="float: left; width: 20%;" src="imgs/aviation_week.jpg" alt="photo credit">
+          <img style="float: left; width: 20%;" src="imgs/aviation_week.jpg">
           <figcaption>Photo Credit: Chris Zimmer Photography</figcaption>
         </figure>
 
