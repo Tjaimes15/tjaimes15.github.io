@@ -91,6 +91,51 @@ a:hover {
     padding: 20px;
 }
 
+.filter{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+table{
+  position:absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  border-collapse: collapse;
+  border-spacing:0;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  box-shadow: 0 12px 5px rgba(32,32,32,0.3);
+  background: #fafafa;
+  text-align: center;
+}
+
+th.td{
+  padding: 10px 15px;
+}
+
+th{
+  background: #ba68c8;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+td{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+tr:nth-child(odd){
+  background-color: #eeee;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -128,5 +173,52 @@ a:hover {
 robots and rovers, pitch engineering concepts to solve social issues in Latin America, and develop test concepts 
 for icy worlds and moon research and development projects! Click below on one of my projects to get more information &#127765;</p> 
 </div>
+
+<div class="filter">
+
+</div>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Address</th>
+    <th>Sal</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Fab</td>
+    <td>LeBlanc</td>
+    <td>email</td>
+    <td>number</td>
+  </tr>
+
+    <tr>
+    <td>2</td>
+    <td>Fab</td>
+    <td>LeBlanc</td>
+    <td>email</td>
+    <td>number</td>
+  </tr>
+
+    <tr>
+    <td>3</td>
+    <td>Fab</td>
+    <td>LeBlanc</td>
+    <td>email</td>
+    <td>number</td>
+  </tr>
+
+    <tr>
+    <td>4</td>
+    <td>Fab</td>
+    <td>LeBlanc</td>
+    <td>email</td>
+    <td>number</td>
+  </tr>
+
+</table>
 </body>
 </html>
