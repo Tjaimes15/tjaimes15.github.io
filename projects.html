@@ -85,6 +85,31 @@ a:hover {
   padding: 20px;
 }
 
+table {
+  width: 100%; /* Make table span full width */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  font-family: Arial, sans-serif; /* Choose a professional font */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Light grey borders */
+  padding: 8px; /* Spacing within cells */
+  text-align: left; /* Align text to the left */
+}
+
+th {
+  background-color: #f2f2f2; /* Light grey background for headers */
+  color: #333; /* Darker text for headers */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row colors for readability */
+}
+
+tr:hover {
+  background-color: #e0e0e0; /* Highlight rows on hover */
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -117,7 +142,32 @@ a:hover {
   <a href="index.html#connect" class="right">Contact</a>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-DmwC_rSjls?si=VqBJ7sgXEjfovM4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Voltage</td>
+      <td>12.5</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>2.0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Resistance</td>
+      <td>6.25</td>
+      <td>Ω</td>
+    </tr>
+  </tbody>
+</table>
 
 
 </body>
