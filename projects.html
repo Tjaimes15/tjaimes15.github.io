@@ -102,6 +102,7 @@ a:hover {
 }
 
 table{
+  table-layout: fixed;
   position: absolute;
   z-index: 2;
   margin-top: 30px;
@@ -126,11 +127,14 @@ th, td{
 th{
   background: #5C8DC1;
   color: #fafafa;
-  font-family: 'Space Grotesk'
+  font-family: 'Space Grotesk';
 }
 
 td{
-  font-family: 'Space Grotesk'
+  font-family: 'Space Grotesk';
+  overflow: hidden;
+  white-space: nowrap; /* Prevents text wrapping */
+  text-overflow: ellipsis; /* Adds "..." for truncated text */
 }
 
 tr:nth-child(odd){
