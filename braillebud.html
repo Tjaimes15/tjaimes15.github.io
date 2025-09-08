@@ -111,6 +111,12 @@ a:hover {
   padding: 20px;
 }
 
+.main_special {   
+  flex: 70%;
+  background-color: white;
+  padding: 10px;
+}
+
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #aaa;
@@ -178,7 +184,7 @@ a:hover {
         <div class="side_special">
             <img style="width: 80%; display: block; margin-left: auto; margin-right: auto;" src="imgs/braillebud_electrical.png">
         </div>
-        <div class="main">
+        <div class="main_special">
         <p> • BrailleBud implements 5V solenoids whose pins act as braille dots, and these solenoids are placed side by side along three rows to simulate a Braille cell <br>
         • PIR sensors are utilized to keep track of the child’s placement on the device - if the child is hovering over the braille cell, the speaker plays an audio congratulating them, 
         and the program goes onto the following case. Otherwise, an audio encouraging the child to try again is played, and the program loops the case until it detects the child’s movement over the cells<br>
